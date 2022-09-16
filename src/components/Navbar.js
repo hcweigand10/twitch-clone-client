@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom"
 
-const Navbar = () => {
+import GoogleAuth from "./GoogleAuth";
 
-    const logOut = () => {
-        console.log("logout")
-    }
+const Navbar = () => {
 
     return (
         <div className="custom-navbar" style={{width: "100%"}}>
@@ -14,7 +12,7 @@ const Navbar = () => {
                 <Link class="item" to="/">Page 2</Link>
                 <Link class="item" to="/">Page 3</Link>
                 <div class="right menu">
-                    <button class="ui item button" onClick={logOut}>Logout</button>
+                    <GoogleAuth />
                 </div>
             </div>
         </div>

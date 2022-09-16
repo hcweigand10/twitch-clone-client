@@ -1,12 +1,5 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from "redux";
 
-const usersReducer = (state=[], action) => {
-    switch (action.type) {
-        case 'FETCH_USER': 
-            return [...state, action.payload];
-        default: 
-            return state
-    }
-}
-
-export default usersReducer
+export default combineReducers({
+    replaceMe: () => 5
+})

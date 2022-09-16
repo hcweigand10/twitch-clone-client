@@ -7,6 +7,7 @@ import App from './App';
 import reducers from './reducers'
 
 const store = configureStore({reducer: reducers})
+// const store = configureStore()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
